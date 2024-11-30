@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 export default function ProjectsSidebar() {
   const [projects, setProject] = useState([]);
@@ -10,9 +11,7 @@ export default function ProjectsSidebar() {
         Your Projects
       </h2>
       <div>
-        <button className="px-4 py-2 text-xs md:text-base rounded-md bg-stone-700 text-stone-400 hover:bg-stone-600 hover:text-stone-100">
-          + Add Project
-        </button>
+        <Button> + Add Project </Button>
       </div>
       <ul className="mt-8">
         <button className="w-full text-left px-2 py-1 rounded-sm my-1 hover:text-stone-200 hover:bg-stone-800">
